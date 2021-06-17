@@ -4,13 +4,19 @@
 
 \> 
 
-The agent name used into _Mjollnir_ is named a **Chocolate**. This is the equivalent of the **Meterpreter** into _Metasploit_, or the **Grunt** into _Covenant_, and so on.
+The agent's name used into _Mjollnir_ is named a **Chocolate**. This is the equivalent of the **Meterpreter** into _Metasploit_, the **Grunt** into _Covenant_, or the **Beacon** into __Cobalt Strike__, and so on.
 
 Before using a **Chocolate**  you need to start a listener that will handle the connection of all of your **Chocolates**.
 
+All requests need to be authenticated. When you login, you will grab 2 cookies containing:
+* user\_uid
+* user\_token
+
+And thus you have to provide those cookies when performing a request to an endpoint of the mjollnir API.
+
 ## Create a listener
 
-You need to be authenticated in order to be able to create à listener, that's why there are a **user_uid** and a **user_token** in the following request:
+You need to be authenticated in order to be able to create a listener, that's why there are a **user_uid** and a **user_token** in the following request:
 ```
 $ curl -X POST 'http://127.0.0.1:3030/listener' -H 'Content-Type: application/json' -d '{"listener_type": "tcp", "listener_bind_port": "8080", "listener_bind_address": "127.0.0.1"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
 ```
@@ -18,6 +24,8 @@ $ curl -X POST 'http://127.0.0.1:3030/listener' -H 'Content-Type: application/js
 But you can use the webui as well:
 
 ![](demos/create_listener.gif)
+
+The user can see that in order to create a listener he needs to specify the **listener_type** which is **tcp**, **http/s**, **udp** and so on, but the **listener_bind_port** and the **listener_bind_address** as well.
 
 When a listener is created, Mjollnir will start the corresponding listener. And so, Mjollnir populates the database with the informations of the freshly started listener. The user can manually see the content of the database with:
 ```
@@ -57,6 +65,58 @@ By deleting a listener, the corresponding entry into the Mjollnir database will 
 ```
 curl -X PUT 'http://127.0.0.1:3030/listener' -H 'Content-Type: application/json' -d '{"listener_uid": "XXXXXXXX", "listener_name": "new name"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
 ```
+
 By default the name of the listener is the listener uid, but sometimes you would like to specify directly an other listener name.
 
+Once you launched your listener, you can build your **Chocolate** like following.
 
+## Create a chocolate
+
+Each agent is build when you need it, and will have a hash different from the previous one. This allows that a basic rule based only on the hash will not work here.
+
+![](demos/create_agent.png)
+
+```
+$ curl -X POST 'http://127.0.0.1:3030/agent' -H 'Content-Type: application/json' -d '{"agent_os":"win_x86_64", "agent_type":"tcp", "agent_ip": "127.0.0.1", "agent_port":"8080", "agent_sleep":"10000"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
+```
+
+The **agent_sleep** is the time the agent waits for making an other request to the listener. When an agent make a request to the listener to tell that it's alive, the **agent table** is updated. 
+
+An agent does nothing by itself, it always asks for a task to the listener.
+
+> Same as for the listeners, Mjollnir-c2 doesn't come with pre-made agent. You have to code them yourself to suit your needs.
+
+We will see later the requirements in order to code your agent the right way. Let's continue.
+
+## List all agents
+
+Here are the endpoints used to list all agents connected to mjollnir c2:
+```
+$ curl -X GET 'http://127.0.0.1:3030/agent/' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' 
+$ curl -X GET 'http://127.0.0.1:3030/agent/?search_uid=XXXXXXXX' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX'
+```
+
+When a **chocolate** connects to a **listener** an entry is added to the **agent table** and can be requested with the upper request.
+
+The **search_uid** parameter allow to look for an **agent_uid** in particular.
+
+Use the dashboard tab to see all your agents:
+
+![](demos/create_agent.png)
+
+When an agent is started in high integrity level, you could see that it is in green, else it has no colour.
+
+## Update a agent name/group
+
+```
+curl -X PUT 'http://127.0.0.1:3030/agent' -H 'Content-Type: application/json' -d '{"agent_uid": "XXXXXXXX", "agent_name": "new name", "agent_group": "default"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
+```
+By default the name of the agent is the agent uid, but sometimes you would like to specify directly an other agent name. 
+
+## List all agent groups
+
+```
+$ curl -X GET 'http://127.0.0.1:3030/group' -b 'user_uid=XXXXXXXX; user_token=XXXXXXXX' -v
+```
+
+You could add your agent to a group. This could be usefull when you want to execute a command on several agent but not all at the same time.
