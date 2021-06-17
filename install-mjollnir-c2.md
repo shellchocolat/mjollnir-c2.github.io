@@ -165,6 +165,8 @@ $ ufw status numbered
 $ ufw delete 3 (for example)
 ```
 
+You can restrict the access to the frontend as well on the port 8000
+
 Of course you will need to allow the listeners' port as well, but without specify the IP, because you don't know from where the connection will be established.
 
 ## Login for the first time
