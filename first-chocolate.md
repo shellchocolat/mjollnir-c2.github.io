@@ -111,6 +111,7 @@ When an agent is started in high integrity level, you could see that it is in gr
 ```
 curl -X PUT 'http://127.0.0.1:3030/agent' -H 'Content-Type: application/json' -d '{"agent_uid": "XXXXXXXX", "agent_name": "new name", "agent_group": "default"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
 ```
+
 By default the name of the agent is the agent uid, but sometimes you would like to specify directly an other agent name. 
 
 ## List all agent groups
