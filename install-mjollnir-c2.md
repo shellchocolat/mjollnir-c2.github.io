@@ -78,3 +78,13 @@ $ curl -X POST 'http://127.0.0.1:3030/login' -H 'Content-Type: application/json'
 When connected, a **user_token** and a **user_uid** are given to the user that will be used to authenticate to other endpoints of the mjollnir api. You can verify that checking your cookies. 
 
 Currently, only one session is allowed. That means that if someone got access to your instance, you will be disconnected, letting you know that someone successfully logins. You could then go to your backend and modify directly the mjollnir database in order to kick him out.
+
+## Logout
+
+In order to logout, join the **logout** endpoint with a correct cookie containing **user_uid** and **user_token**.
+
+```
+curl -X GET 'http://127.0.0.1:3030/logout' -b 'user_uid=XXXXXXXX;user_token=XXXXXXXX' -v
+```
+
+In order to logout, the api just replace the token with a random one. Good luck bruteforcing that.
