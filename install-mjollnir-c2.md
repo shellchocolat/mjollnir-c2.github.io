@@ -1,6 +1,7 @@
 # Mjollnir c2 setup
 
 < [index](install-mjollnir-c2.md)
+\> [Launch your first chocolate](first-chocolate.md)
 
 ## Full setup 
 
