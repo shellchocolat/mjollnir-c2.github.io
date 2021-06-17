@@ -28,6 +28,7 @@ postgres=# \l -> list all the databases
 
 Install rust and cargo to use the mjollnir backend:
 > https://www.rust-lang.org/tools/install
+
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 $ source $HOME/.cargo/env
@@ -66,13 +67,13 @@ $ npx quasar dev
 If the user doesn't want to install all thoses dependencies, he could use the docker instead.
 
 ## Login for the first time
+
+> The default user is  **thor**.
+> The user is encouraged to take a strong password.
+
 ```
 $ curl -X POST 'http://127.0.0.1:3030/login' -H 'Content-Type: application/json' -d '{"username": "thor", "password": "mjollnir", "role": "admin"}' -v
 ```
- 
-> The default user is  **thor**.
-
-The user is encouraged to take a strong password.
 
 When connected, a **user_token** and a **user_uid** are given to the user that will be used to authenticate to other endpoints of the mjollnir api. You can verify that checking your cookies. 
 
