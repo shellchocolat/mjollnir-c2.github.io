@@ -1,6 +1,8 @@
-# How to install Mjollnir c2 ?
+# Mjollnir c2 setup
 
-## Initialisation
+< [index](install-mjollnir-c2.md)
+
+## Full setup 
 
 First construct the postgresql database:
 ```
@@ -66,6 +68,8 @@ $ npx quasar dev
 
 If the user doesn't want to install all thoses dependencies, he could use the docker instead.
 
+## Docker setup
+
 ## Login for the first time
 
 > The default user is  **thor**.
@@ -79,6 +83,17 @@ When connected, a **user_token** and a **user_uid** are given to the user that w
 
 Currently, only one session is allowed. That means that if someone got access to your instance, you will be disconnected, letting you know that someone successfully logins. You could then go to your backend and modify directly the mjollnir database in order to kick him out.
 
+## Check authorization
+
+You can check that you are well logged using this request:
+
+```
+$ curl -X GET 'http://127.0.0.1:3030/auth' -b 'user_uid=XXXXXXXX; user_token=XXXXXXXX'  -v
+```
+
+* If the response is **200** the user has a valid token.
+* If the response is **401** the user has not a valid token.
+
 ## Logout
 
 In order to logout, join the **logout** endpoint with a correct cookie containing **user_uid** and **user_token**.
@@ -88,3 +103,4 @@ curl -X GET 'http://127.0.0.1:3030/logout' -b 'user_uid=XXXXXXXX;user_token=XXXX
 ```
 
 In order to logout, the api just replace the token with a random one. Good luck bruteforcing that.
+
