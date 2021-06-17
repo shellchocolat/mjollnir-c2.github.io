@@ -30,6 +30,33 @@ Of course, the user can manually check if the binded port is well opened:
 $ ss -lntp
 ```
 
+## List all listeners
 
+There is a endpoint that list all the listeners that are saved into the mjollnir database. You can request it like:
+```
+$ curl -X GET 'http://127.0.0.1:3030/listener/' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' 
+$ curl -X GET 'http://127.0.0.1:3030/listener/?search_port=8080' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' 
+```
+
+> This endpoint is also reachable from the webui
+
+You have to give the **user_uid** and **user_token** in a cookie to perform the request.
+
+## Delete a listener
+
+You could delete a listener from the database. Besides, doing that action will also shut down the listener if it is still up. The following request show how to contact the corresponding endpoint:
+```
+curl -X DELETE 'http://127.0.0.1:3030/listener/XXXXXXXX' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
+```
+
+> This endpoint is also reachable from the webui
+
+By deleting a listener, the corresponding entry into the Mjollnir database will be deleted too. The user can verify manually into the **listener table** that the listener is not present anymore, and using the **ss -lntp** command to check out that the binded port is not listening anymore.
+
+## Update a listener name
+```
+curl -X PUT 'http://127.0.0.1:3030/listener' -H 'Content-Type: application/json' -d '{"listener_uid": "XXXXXXXX", "listener_name": "new name"}' -b 'user_uid=XXXXXXXX ; user_token=XXXXXXXX' -v
+```
+By default the name of the listener is the listener uid, but sometimes you would like to specify directly an other listener name.
 
 
