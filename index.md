@@ -1,3 +1,3 @@
 # mjollnir c2
 
-[a relative link](install-mjollnir-c2.md)
+1. [How to install Mjollnir c2?](install-mjollnir-c2.md)
