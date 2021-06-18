@@ -55,7 +55,7 @@ You have to specify the type of the launcher you would like to use:
 * shellcode
 * pe
 
-You can use the one you want and implement one that is not listed too.
+You can use the one you want or implement one that is not listed instead.
 
 The **launcher name** is the name of the launcher that will be available into the **Up/download** tab. So you must start a **File server** first.
 
