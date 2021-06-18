@@ -87,7 +87,7 @@ Here is an example of **template**:
 ```
 <html>
     <body>
-        Hello \{\{USERNAME\}\}, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
+        Hello {{USERNAME}}, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
 
         Please submit that \{\{CODE\}\} to the application in order to validate your authentication.
     </body>
