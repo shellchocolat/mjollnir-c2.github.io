@@ -18,7 +18,7 @@ Let's click on the **Chocolate 54**, which has an **High Integrity Level** (in g
 
 ![](images/chocolate-interaction/open_chocolate.png)
 
-As we can see, there is already a task that has been performed !! This is because I tell Mjollnir to execute the task **PERSISTANCE_ADD** as soon a new Chocolate registers.
+As we can see, there is already a task that has been performed !! This is because I tell Mjollnir to execute the task **PERSISTANCE_ADD** as soon as new Chocolate registers.
 
 Doing so, all my new Chocolates will add persistence to the victime machine they are running on.
 
