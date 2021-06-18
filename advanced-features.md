@@ -83,7 +83,7 @@ If you send, let's say, 2000 identical emails to a company, there are good chanc
 
 Knowing that, you have to create your template carefully included some \{\{TAG\}\} into it. Those \{\{TAG\}\} will also be into the **Emails lists**.
 
-As an example of **template**:
+Here is an example of **template**:
 ```
 <html>
     <body>
@@ -94,7 +94,7 @@ As an example of **template**:
 </html>
 ```
 
-And an example of **Emails list**:
+And here an example of **Emails list**:
 ```
 EMAIL,USERNAME,DATE,CODE
 thor@mjollnir.fr,Thor God of Thunder,01/01/1900,12345
