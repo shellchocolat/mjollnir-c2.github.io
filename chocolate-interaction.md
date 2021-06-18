@@ -12,7 +12,7 @@ You can see the Chocolates and the Listeners on the **Dashboard** tab:
 
 ![](images/chocolate-interaction/dashboard.png)
 
-On that figure you could see the **Listener** that is up, and all my Chocolates.
+On that figure you could see the **Listener** that is up on the right, and all my Chocolates on the left.
 
 Let's click on the **Chocolate 54**, which has an **High Integrity Level** (in green):
 
