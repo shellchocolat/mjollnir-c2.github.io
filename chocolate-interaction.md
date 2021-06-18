@@ -84,7 +84,7 @@ Here, I choose to inject a shellcode with the **INJECT_SC** command. First I hav
 
 ![](images/chocolate-interaction/msfconsole.png)
 
-You will see that I created a meterpreter payload and displayed it as hex. The handler is listening on the port 6666. By now, if I execute this shellcode using the **ASM** command and if it get caugth by the antivirus, the meterpreter will be killed for sure, but my Chocolate too. So the trick is to execute this shellcode into an other process (evil !!!).
+You could see that I created a meterpreter payload and displayed it as hex. The handler is listening on the port 6666. By now, if I execute this shellcode using the **ASM** command and if it get caugth by the antivirus, the meterpreter will be killed for sure, but my Chocolate too. So the trick is to execute this shellcode into an other process (evil !!!).
 
 Let's look at the **INJECT_SC** command's help:
 * INJECT_SC \<bytecode\>
