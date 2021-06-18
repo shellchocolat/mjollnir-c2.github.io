@@ -53,7 +53,7 @@ The **Help** popup tells me that I have to specify the **ip** to be scanned, and
 
 ![](images/chocolate-interaction/scan.png)
 
-It seems to work well. But, I have to tell you, that this scanner is clearly not powerfull. It has to be use to confirm that a port is well opened, like 139, 445, 80 and so on. If you want to perform a full scan of a victim machine, I recommand you to use a more suitable scanner, like **nmap**.
+It seems to work well. But, I have to tell you, that this scanner is clearly not powerfull. It has to be used to confirm that a port is well opened, like 139, 445, 80 and so on. If you want to perform a full scan of a victim machine, I recommand you to use a more suitable scanner, like **nmap**.
 
 I have seen an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows to dump a process. Let's see the help:
 * DUMP_PID \<pid\> \<location\>
