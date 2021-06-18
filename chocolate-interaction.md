@@ -58,7 +58,7 @@ It seems to work well. But, I have to tell you, that this scanner is clearly not
 We have an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows the Chocolate to dump a process. Let's see the help:
 * DUMP_PID \<pid\> \<location\>
 
-The **pid** is the pid of the process you want to dump. The location is the location where you want the dump. As my chocolate is running under a High Privilege Level, I will try to dump **lsass** process. This is quite common on internal intrusion assessment. As I already get all the processes running on the machine earlier, I know that **lsass process** has the pid **628**:
+The **pid** is the pid of the process you want to dump. The **location** is the location where you want the dump. As my chocolate is running under a High Privilege Level, I will try to dump **lsass** process. This is quite common on internal intrusion assessment. As I already get all the processes running on the machine earlier, I know that **lsass process** has the pid **628**:
 
 ![](images/chocolate-interaction/lsass_error.png)
 
