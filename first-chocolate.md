@@ -1,6 +1,7 @@
 # Launch your first chocolate
 
 [< Index](index.md)
+
 [> Some more advanced chocolate's features](advanced-chocolate.md)
 
 The agent's name used into _Mjollnir_ is named a **Chocolate**. This is the equivalent of the **Meterpreter** into _Metasploit_, the **Grunt** into _Covenant_, or the **Beacon** into __Cobalt Strike__, and so on.
