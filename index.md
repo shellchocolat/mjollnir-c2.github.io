@@ -4,7 +4,7 @@
 
 This c2 will definitely help you out in the **post exploitation** of your **intrusion test**.
 
-Concerning the agent, its name is a **Chocolate**. You can code your own Chocolate in the language you want, and integrate it into Mjollnir very easily. **There is a support to help you with that !**
+Concerning the agent, its name is a **Chocolate**. You can code your own Chocolate in the language you want, and integrate it into Mjollnir very easily. **There is a support to help you out with that !**
 
 This is also true, for the listeners. Currently, listeners are coded in **python**, but you can choose the language you want as well.
 
