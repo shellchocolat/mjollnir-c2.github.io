@@ -77,7 +77,7 @@ You can define the **source email** / **source email password** that will send t
 
 You have to create an **email template** in HTTP format. You could add one attachement if needed.
 
-The important point is the **Emails list**. The email list has a **?** next to it. Because it needs some explanations.
+The important point is the **Emails list**. The email list has a **?** next to it because it needs some explanations.
 
 If you send, let's say, 2000 identical emails to a company, there are good chances that there will be tagged as phishing (well it is). But if each email is sligtly different, perhaps user personalized, those email will not be tagged as phishing.
 
