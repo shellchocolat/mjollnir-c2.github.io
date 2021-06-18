@@ -94,6 +94,8 @@ Here is an example of **template**:
 </html>
 ```
 
+> (without the backslash before the { and  }. I couldn't succeed to write them properly ...)
+
 And here an example of **Emails list**:
 ```
 EMAIL,USERNAME,DATE,CODE
