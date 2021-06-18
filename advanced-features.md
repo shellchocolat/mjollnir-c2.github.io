@@ -81,7 +81,7 @@ The important point is the **Emails list**. The email list has a **?** next to i
 
 If you send, let's say, 2000 identical emails to a company, there are good chances that there will be tagged as phishing emails (well they are). But if each email is sligtly different, perhaps user personalized, those email will not be tagged as phishing.
 
-Knowing that, you have to create your template carefully included some {{TAG}} into it. Those {{TAG}} will also be into the **Emails lists**.
+Knowing that, you have to create your template carefully included some \{\{TAG\}\} into it. Those \{\{TAG\}\} will also be into the **Emails lists**.
 
 As an example of **template**:
 ```
