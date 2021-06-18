@@ -1,6 +1,6 @@
 # Launch your first chocolate
 
-< [index](install-mjollnir-c2.md)
+< [index](index.md)
 
 \> 
 
