@@ -63,7 +63,7 @@ By the way, you have to specify the **file server ip** and the **file server por
 
 And obviously you have to indicate the name of the Chocolate that will be downloaded. The Chocolate has to be available on the **Up/download** tab.
 
-## You say Phishing?
+## Did you say Phishing?
 
 Well, you know how to create your **launcher** that will download your **Chocolate** and executes it in memory. But how to make the victim download and execute your launcher?
 
