@@ -88,7 +88,7 @@ $ curl -X POST 'http://127.0.0.1:3030/agent' -H 'Content-Type: application/json'
 
 ![](images/first-chocolate/agent_create.png)
 
-* **agent_type**: has to match the listener that you launch previously
+* **agent_type**: has to match the listener's type that you launch previously
 * **agent_ip**, **agent_port**: have to match your listener's parameters
 * **agent_sleep**: the agent waits for making an other request to the listener.
 * **agent_jitter**: in order to not send periodic request to the c2, a random time is added -> **agent_sleep + rand(0, agent_jitter)**
@@ -121,11 +121,11 @@ There is a **command menu** that allow you to execute multiple actions with your
 
 ![](images/first-chocolate/agent_interact.png)
 
-There is a **green help button** next to the **command menu**. When clicked, it display a popup with the command's help:
+There is a **green help button** next to the **command menu**. When clicked, it displays a popup with the command's help:
 
 ![](images/first-chocolate/agent_help.png)
 
-We will see later some features about the interaction with an agent.
+We will see later some advanced features about the interaction with an agent.
 
 ## Update a agent name/group
 
@@ -147,6 +147,6 @@ curl -X PUT 'http://127.0.0.1:3030/agent' -H 'Content-Type: application/json' -d
 $ curl -X GET 'http://127.0.0.1:3030/group' -b 'user_uid=XXXXXXXX; user_token=XXXXXXXX' -v
 ```
 
-You could add your agent to a group. This could be usefull when you want to execute a command on several agent but not all at the same time.
+You could add your agent to a group. This could be usefull when you want to execute a command on several agents but not all at the same time.
 
 To list all of your agent on the webui, there is the **Dashboard** tab.
