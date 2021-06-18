@@ -9,17 +9,17 @@ So far, you know how to start a listener and how to build and interact with a Ch
 
 ## Different kind of tasks
 
-Experimenting with your first Chocolate, you access it by clicking on the **Dashboard** tab. However there is a better way to do that. Click on the **Tasks** tab like the following:
+Experimenting with your first Chocolate, you accessed it by clicking on the **Dashboard** tab. However there is a better way to do that. Click on the **Tasks** tab like the following:
 
 ![](images/advanced-features/tasks.png)
 
 You will see 4 new tabs:
 * **Tasks**: allows you to see all your active Chocolates and interact with them the way you did by clicking on the **Dashboard** tab
 * **Bulk task**: allows you to select a **group** of Chocolates and order them to execute a specific task
-* **Batch task**: allows you to select one Chocolate and order to it to execute tasks after tasks automatically
+* **Batch task**: allows you to select one Chocolate and order it to execute tasks after tasks automatically
 * **On registering task**: allows you to execute several tasks as soon as a Chocolate registers
 
-Those for tabs are very usefull, and I am sure you already know when use them.
+Those four tabs are very usefull, and I am sure you already know when you could use them.
 
 ## Make your Chocolate downloadable
 
