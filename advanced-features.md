@@ -2,6 +2,9 @@
 
 [< Index](index.md)
 
+[> Interact with your Chocolate](chocolate-interaction.md)
+
+
 So far, you know how to start a listener and how to build and interact with a Chocolate. Let's see some advanced features about **Mjollnir c2**.
 
 ## Different kind of tasks
