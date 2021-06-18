@@ -87,7 +87,7 @@ Here is an example of **template**:
 ```
 <html>
     <body>
-        Hello {{ USERNAME }}, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
+        Hello \{\{USERNAME\}\}, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
 
         Please submit that \{\{CODE\}\} to the application in order to validate your authentication.
     </body>
@@ -112,7 +112,7 @@ You can click the corresponding raw, and update your campaign before submitting 
 
 ## Save your loots
 
-Now that you know how to propagate your Chocolate, and you get some importants informations such as **password** and **hash** of the victim machine, you may want to save them.
+Now that you know how to propagate your Chocolate, and you probably know how to get some importants informations such as **password** and **hash** of the victim machine, you may want to save them.
 
 There is a **Loots** tab specially crafted for that:
 
