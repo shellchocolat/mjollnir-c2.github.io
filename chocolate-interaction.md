@@ -76,8 +76,8 @@ We soon get a new Chocolate as **SYSTEM**. Let's try to dump **lsass** by now:
 **BINGO !**
 
 You may think, what if I don't have enough features availables on my Chocolate? Well, you could start a **meterpreter** for exemple to get more stuff to do. There are three ways to inject a shellcode:
-* **ASM**: will execute a shellcode in the Chocolate process. Could be tricky, because if your shellcode is flagged as malicious and ended, you Chocolate will be killed too.
-* **INJECT_SC**: will inject your shellcode in an other process and execute it
+* **ASM**: will execute a shellcode into the virtual address space of the Chocolate process. Could be tricky, because if your shellcode is flagged as malicious and ended, you Chocolate will be killed too.
+* **INJECT_SC**: will inject your shellcode into the virtual address space of an other process and execute it
 * **INJECT_DLL**: will inject your DLL into an other process and execute its main()
 
 Here, I choose to inject a shellcode with the **INJECT_SC** command. First I have to generate the **meterpreter** and start a handler:
