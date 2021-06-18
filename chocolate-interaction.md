@@ -45,7 +45,7 @@ Ok, so we can interact with the remote machine as if we have a remote shell. Thi
 
 ![](images/chocolate-interaction/help.png)
 
-The **Help** popup tells me that I have to specify the **ip** to be scanned, and the **ports** to be scanned as well. Everything space separated. Let's try that. As I am on my lab machine, I will try to scan it for the port that I am sure are opened:
+The **Help** popup tells me that I have to specify the **ip** to be scanned, and the **ports** to be scanned as well. Everything space separated. Let's try that. As I am on my lab machine, I will try to scan it for the ports that I am sure are opened:
 * 3030: Mjollnir api
 * 8080: Mjollnir frontend
 * 5555: Listener
