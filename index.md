@@ -15,4 +15,5 @@ You can define a set of actions for all new registered chocolate. But you can al
 Let's give it a try !
 
 1. [How to install Mjollnir c2?](install-mjollnir-c2.md)
-2. [Launch your first chocolate](first-chocolate.md)
+2. [Launch your first Chocolate](first-chocolate.md)
+3. [Some more advanced Mjollnir's features](advanced-features.md)
