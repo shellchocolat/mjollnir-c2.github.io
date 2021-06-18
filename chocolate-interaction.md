@@ -55,7 +55,7 @@ The **Help** popup tells me that I have to specify the **ip** to be scanned, and
 
 It seems to work well. But, I have to tell you, that this scanner is clearly not powerfull. It has to be used to confirm that a port is well opened, like 139, 445, 80 and so on. If you want to perform a full scan of a victim machine, I recommand you to use a more suitable scanner, like **nmap**.
 
-I have seen an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows to dump a process. Let's see the help:
+We have an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows to dump a process. Let's see the help:
 * DUMP_PID \<pid\> \<location\>
 
 The **pid** is the pid of the process you want to dump. The location is the location where you want the dump. As my chocolate is running under a High Privilege Level, I will try to dump **lsass** process. This is quite common on internal intrusion assessment. As I already get all the processes running on the machine earlier, I know that **lsass process** has the pid **628**:
@@ -75,7 +75,7 @@ We soon get a new Chocolate as **SYSTEM**. Let's try to dump **lsass** by now:
 
 **BINGO !**
 
-You may think, what if I don't have enough features availables on my Chocolate. Well, you could start a **meterpreter** for exemple to get more stuff to do. There are three ways to inject a shellcode:
+You may think, what if I don't have enough features availables on my Chocolate? Well, you could start a **meterpreter** for exemple to get more stuff to do. There are three ways to inject a shellcode:
 * **ASM**: will execute a shellcode in the Chocolate process. Could be tricky, because if your shellcode is flagged as malicious and ended, you Chocolate will be killed too.
 * **INJECT_SC**: will inject your shellcode in an other process and execute it
 * **INJECT_DLL**: will inject your DLL into an other process and execute its main()
@@ -84,7 +84,7 @@ Here, I choose to inject a shellcode with the **INJECT_SC** command. First I hav
 
 ![](images/chocolate-interaction/msfconsole.png)
 
-You will see that I created a meterpreter payload and display it as hex. The handler is listening on the port 6666. By now, if I execute this shellcode using the **ASM** command and if it get caugth by the antivirus, the meterpreter will be killed for sure, but my Chocolate too. So the trick is to execute this shellcode into an other process (evil !!!).
+You will see that I created a meterpreter payload and displayed it as hex. The handler is listening on the port 6666. By now, if I execute this shellcode using the **ASM** command and if it get caugth by the antivirus, the meterpreter will be killed for sure, but my Chocolate too. So the trick is to execute this shellcode into an other process (evil !!!).
 
 Let's look at the **INJECT_SC** command's help:
 * INJECT_SC \<bytecode\>
