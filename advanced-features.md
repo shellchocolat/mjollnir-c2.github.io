@@ -73,7 +73,7 @@ There is a **Phishing** tab. Let's see it:
 
 You can define the **campaign's name**, the **SMTP server** you want to use, as well as the **SMTP port**. 
 
-You can define the **source email** / **source email password** that will send the phishing emails. The **display name** is the name that will appears into the victime email. 
+You can define the **source email** / **source email password** that will send the phishing emails. The **display name** is the name that will appears into the victim's email box. 
 
 You have to create an **email template** in HTTP format. You could add one attachement if needed.
 
