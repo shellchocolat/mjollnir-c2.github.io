@@ -87,7 +87,7 @@ Here is an example of **template**:
 ```
 <html>
     <body>
-        Hello { {USERNAME} }, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
+        Hello {\{USERNAME\}}, thank you for registering with the email: \{\{EMAIL\}\} at the date \{\{DATE\}\}
 
         Please submit that \{\{CODE\}\} to the application in order to validate your authentication.
     </body>
@@ -102,7 +102,7 @@ freyja@mjollnir.fr,Freyja,02/02/1900,54321
 odin@mjollnir.fr,Odin,03/03/1900,09876
 ```
 
-You phishing campaign is availabe on the **Dashboard** tab:
+Your phishing campaign is then availabe on the **Dashboard** tab:
 
 ![](images/advanced-features/phishing_list.png)
 
