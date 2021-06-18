@@ -97,7 +97,7 @@ And you get your meterpreter back:
 
 ![](images/chocolate-interaction/meterpreter_success.png)
 
-Hum, my injection seems good, as the antivirus doesn't flag the malicious code injection. However, be carefull if you deal with **EDR** (Endpoint Detection and Response) as it may hook some windows API, and thus detect your code injection.
+Hum, my injection seems good, as the antivirus doesn't flag the malicious code injection. However, be carefull if you deal with **EDR** (Endpoint Detection and Response) as it may hooks some windows APIs, and thus detects your code injection.
 
 You could already imagine the magic. Imagine you use the **bulk tasks** that allows you to spread a command on all your agents !! You will get a bunch of meterpreters poping all around !
 
