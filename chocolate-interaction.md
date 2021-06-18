@@ -89,7 +89,7 @@ You could see that I created a meterpreter payload and displayed it as hex. The 
 Let's look at the **INJECT_SC** command's help:
 * INJECT_SC \<bytecode\>
 
-Fairly easy ! Just copy-paste the bytecode, and the shellcode will be execute inside the nodepad.exe process !!
+Fairly easy ! Just copy-paste the bytecode, and the shellcode will be executed inside the nodepad.exe process !!
 
 ![](images/chocolate-interaction/inject_sc_success.png)
 
