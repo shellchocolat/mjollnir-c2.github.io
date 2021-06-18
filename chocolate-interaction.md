@@ -55,7 +55,7 @@ The **Help** popup tells me that I have to specify the **ip** to be scanned, and
 
 It seems to work well. But, I have to tell you, that this scanner is clearly not powerfull. It has to be used to confirm that a port is well opened, like 139, 445, 80 and so on. If you want to perform a full scan of a victim machine, I recommand you to use a more suitable scanner, like **nmap**.
 
-We have an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows to dump a process. Let's see the help:
+We have an other usefull command, which is **DUMP_PID**. Well, it seems clear. This command allows the Chocolate to dump a process. Let's see the help:
 * DUMP_PID \<pid\> \<location\>
 
 The **pid** is the pid of the process you want to dump. The location is the location where you want the dump. As my chocolate is running under a High Privilege Level, I will try to dump **lsass** process. This is quite common on internal intrusion assessment. As I already get all the processes running on the machine earlier, I know that **lsass process** has the pid **628**:
