@@ -41,7 +41,7 @@ Maybe you would like to execute powershell command? Let's try to grab all runnin
 
 ![](images/chocolate-interaction/process.png)
 
-Ok, so we can interact with the remote machine as if we have a remote shell. This is a very basic feature. You may want something more powerfull. Let's see what command we have. Mmmh, oh, there is a **SCAN** command. How does it works? Let's click on the **?** button next to it:
+Ok, so we can interact with the remote machine as if we have a remote shell. This is a very basic feature. You may want something more powerfull. Let's see which commands do we have in stock. Mmmh, oh, there is a **SCAN** command. How does it works? Let's click on the **?** button next to it:
 
 ![](images/chocolate-interaction/help.png)
 
