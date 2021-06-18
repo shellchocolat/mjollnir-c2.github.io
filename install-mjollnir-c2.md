@@ -89,7 +89,7 @@ host all all 127.0.0.1/32 md5
 
 and replace it with 
 ```
-host all all MACHINE_IP/32 mdr
+host all all MACHINE_IP/32 md5
 ```
 
 Then you need to modify the file:
