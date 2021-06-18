@@ -17,4 +17,4 @@ Let's give it a try !
 1. [How to install Mjollnir c2?](install-mjollnir-c2.md)
 2. [Launch your first Chocolate](first-chocolate.md)
 3. [Some more advanced Mjollnir's features](advanced-features.md)
-4. [> Interact with your Chocolate](chocolate-interaction.md)
+4. [Interact with your Chocolate](chocolate-interaction.md)
