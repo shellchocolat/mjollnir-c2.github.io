@@ -178,6 +178,10 @@ Of course you will need to allow the listeners' port as well, but without specif
 $ curl -X POST 'http://127.0.0.1:3030/login' -H 'Content-Type: application/json' -d '{"username": "thor", "password": "mjollnir", "role": "admin"}' -v
 ```
 
+The webui is available as well:
+
+![](images/install-mjollnir-c2/login.png)
+
 When connected, a **user_token** and a **user_uid** are given to the user that will be used to authenticate to other endpoints of the mjollnir api. You can verify that checking your cookies. 
 
 Currently, only one session is allowed. That means that if someone got access to your instance, you will be disconnected, letting you know that someone successfully logins. You could then go to your backend and modify directly the mjollnir database in order to kick him out.
