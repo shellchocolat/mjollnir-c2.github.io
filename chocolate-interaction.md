@@ -102,3 +102,5 @@ Hum, my injection seems good, as the antivirus doesn't flag the malicious code i
 You could already imagine the magic. Imagine you use the **bulk tasks** that allows you to spread a command on all your agents !! You will get a bunch of meterpreters poping all around !
 
 There are more commands to be used. You have to explore them by yourself !
+
+[< Index](index.md)

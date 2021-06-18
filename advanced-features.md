@@ -117,3 +117,7 @@ Now that you know how to propagate your Chocolate, and you get some importants i
 There is a **Loots** tab specially crafted for that:
 
 ![](images/advanced-features/loots.png)
+
+[< Index](index.md)
+
+[> Interact with your Chocolate](chocolate-interaction.md)

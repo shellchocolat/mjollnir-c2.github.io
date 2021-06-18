@@ -207,3 +207,6 @@ curl -X GET 'http://127.0.0.1:3030/logout' -b 'user_uid=XXXXXXXX;user_token=XXXX
 
 In order to logout, the api just replace the token with a random one. Good luck bruteforcing that.
 
+[< Index](index.md)
+
+[> Launch your first chocolate](first-chocolate.md)

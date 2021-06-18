@@ -150,3 +150,7 @@ $ curl -X GET 'http://127.0.0.1:3030/group' -b 'user_uid=XXXXXXXX; user_token=XX
 You could add your agent to a group. This could be usefull when you want to execute a command on several agents but not all at the same time.
 
 To list all of your agent on the webui, there is the **Dashboard** tab.
+
+[< Index](index.md)
+
+[> Some more advanced chocolate's features](advanced-chocolate.md)
