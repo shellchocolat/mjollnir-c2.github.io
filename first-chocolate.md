@@ -2,7 +2,7 @@
 
 [< Index](index.md)
 
-[> Some more advanced chocolate's features](advanced-chocolate.md)
+[> Some more advanced chocolate's features](advanced-features.md)
 
 The agent's name used into _Mjollnir_ is named a **Chocolate**. This is the equivalent of the **Meterpreter** into _Metasploit_, the **Grunt** into _Covenant_, or the **Beacon** into __Cobalt Strike__, and so on.
 
@@ -153,4 +153,4 @@ To list all of your agent on the webui, there is the **Dashboard** tab.
 
 [< Index](index.md)
 
-[> Some more advanced chocolate's features](advanced-chocolate.md)
+[> Some more advanced chocolate's features](advanced-features.md)
